@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: no-repeat url("./assets/images/background-pattern-desktop.svg");
+  background-color: hsl(275, 100%, 97%);
+  background-size: 100% auto; 
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.faqs {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 50%;
+  min-width: 600px;
+  padding: 20px;
+}
+
+.faqs > .header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.faqs > .header > h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  transition: 0.4s;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(233, 232, 232);
+}
+
+.accordion > .header {
+  display: flex;
+  font-weight: bold;
+}
+
+.accordion > .header:hover {
+  color: hsl(292, 16%, 49%);
+  cursor: pointer;
+}
+
+.accordion .expand {
+  margin-left: auto;
+  position: relative;
+  top: -7px;
+}
+
+.accordion .content {
+  font-size: 16px;
+  font-family: Works-san;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .faqs {
+    width: 90%;
+    min-width: 200px;
+  }
+
+  body {
+    background: no-repeat url("./assets/images/background-pattern-mobile.svg");
+    background-color: hsl(275, 100%, 97%);
+    background-size: 100% auto; 
+  }
+}
