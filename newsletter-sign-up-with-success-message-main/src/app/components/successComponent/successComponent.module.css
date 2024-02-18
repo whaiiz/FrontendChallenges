@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.successContainer {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px 50px;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+.successIcon {
+  margin: 1em 0;
+}
+
+.successContainer button {
+  width: 100%;
+  margin: 2em 0;
+}
+
+.successContainer p {
+  margin-top: 1em;
+}
+
+.successContainer h1 {
+  margin: 0.5em 0;
+}
+
+@media only screen and (max-width: 500px) { 
+  .successContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  .successContainer button {
+    margin-top: auto;
+  }
+
+  .successIcon {
+    width: 20%;
+    height: auto;
+    margin-top: 40%; 
+  }
+}
